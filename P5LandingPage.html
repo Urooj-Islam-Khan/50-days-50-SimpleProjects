@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .container {
+            background-image: url(/Pics/pics10.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            /* background-position: center; */
+            min-height: 759px;
+        }
+
+        .top {
+            position: relative;
+            padding-top: 10px;
+            display: block;
+            background-color: rgb(237, 176, 252);
+            padding-left: 20px;
+            padding-bottom: 0px;
+            color: aliceblue;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(252, 231, 250);
+            padding-right: 30px;
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+
+        .secondbar h4 {
+            font-size: 50px;
+        }
+
+        .secondbar span {
+            color: magenta;
+            letter-spacing: 1.3px;
+        }
+
+        nav ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            padding: 15px 15px;
+        }
+
+
+        ul li a {
+            color: magenta;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 15px;
+            position: relative;
+        }
+
+        ul li a::after {
+            content: "";
+            width: 103%;
+            height: 103%;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            position: absolute;
+            box-sizing: border-box;
+            border-top: 3px solid rgb(253, 167, 181);
+            border-left: 3px solid rgb(253, 167, 181);
+        }
+
+        ul li a::before {
+            content: "";
+            width: 103%;
+            height: 103%;
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            transition: all 0.3s;
+            box-sizing: border-box;
+            border-right: 3px solid rgb(253, 167, 181);
+            border-bottom: 3px solid rgb(253, 167, 181);
+        }
+
+        ul li a:hover:before,
+        ul li a:hover:after {
+            width: 10%;
+            height: 20%;
+            transform: rotate(360deg);
+        }
+
+        .top h6 {
+            margin-left: 90%;
+            font-size: 27px;
+            position: relative;
+            bottom: 13px;
+
+        }
+
+        .wishlist {
+            font-size: 22px;
+            color: rgb(174, 2, 226);
+            padding: 30px;
+            padding-left: 0;
+            letter-spacing: 1.2px;
+            position: relative;
+            top: 20px;
+            right: 50px;
+        }
+
+        .cart {
+            font-size: 22px;
+            color: magenta;
+            padding-right: 30px;
+            letter-spacing: 1.2px;
+            position: relative;
+            bottom: 8px;
+            left: 70px;
+
+        }
+
+        .head {
+            display: inline-block;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            right: 200px;
+            border-bottom: 7px outset rgb(219, 216, 216);
+
+        }
+
+        .head p {
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px;
+            color: white;
+        }
+
+        .head h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+            color: white;
+            padding: 10px 30px;
+            position: relative;
+            bottom: 25px;
+        }
+
+        .head span {
+
+            color: magenta;
+            letter-spacing: 1.2px;
+            text-shadow: 7px 6px 5px black;
+        }
+
+        .detail {
+
+            position: relative;
+            top: 1250px;
+            left: 100px;
+            right: 200px;
+        }
+
+        .detail h6 {
+            font-size: 27px;
+            padding: 20px;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .button {
+            position: relative;
+            left: 350px;
+            top: 20px;
+            /* bottom:px; */
+            padding: 5px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgb(174, 2, 226);
+            text-decoration: none;
+            color: white;
+            transition: 1.2s;
+
+        }
+
+        .button:hover {
+            background-color: rgb(159, 71, 241);
+            color: black;
+        }
+
+        .top h5 {
+            position: relative;
+            top: 15px;
+            left: 30px;
+            color: black;
+        }
+
+        .footer {
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            background-color: rgb(218, 95, 255);
+
+        }
+
+        .footer p {
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 30px;
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+
+        }
+
+        .footer span {
+            font-weight: normal;
+            color: rgb(36, 34, 34);
+            font-size: 20px;
+            align-items: center;
+            display: flex;
+            flex-flow: column;
+            position: relative;
+            top: 4px;
+
+        }
+
+        .footer img {
+            filter: invert(100%);
+        }
+
+        .img img {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+            height: 700px;
+
+        }
+
+        .winter {
+            position: relative;
+            left: 20px;
+            bottom: 27px;
+
+        }
+
+        .winter span {
+            text-shadow: none;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="top">
+            <h5>WOW Offers! 40-50% OFF Top Tranding Product</h5>
+            <h6>My Account</h6>
+        </section>
+        <nav class="secondbar">
+            <h4><span>My.</span>Outfits</h4>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Jacket</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <p>
+                <span class="wishlist">wishlist
+                    <img src="https://img.freepik.com/free-icon/checklist-square-interface-symbol-rounded-corners_318-56093.jpg?size=626&ext=jpg&ga=GA1.2.1200269331.1687590351&semt=ais"
+                        width="20px" height="20px"></span><img>
+                <span class="cart">cart <img src="/Pics/cart.png" width="20px" height="20px"></span>
+            </p>
+
+        </nav>
+        <div class="bgpic">
+            <div class=" head">
+                <p>Up to 50% Discount</p>
+                <p class="winter">on <span>Winter</span> collection</p>
+                <h1>Women's in <br> <span>Dazzling</span> Outfit</h1>
+            </div>
+
+            <div class="detail">
+                <h6>From the latest fashion brand, It's definitely <br> time to embrace this season and take
+                    advantage from 50% off.</h6>
+            </div>
+            <a href="#" class="button">Shop now</a>
+        </div>
+        <div class="img">
+            <img src="/Pics/oung-pretty-girl-walks-around-city-smiling-posing_1328-4457-removebg-preview.png">
+        </div>
+        <section class="footer">
+            <p> <img src="/Pics/delivery.png" width="40px" height="35px">Worldwide Shipping <br> <span> Order above
+                    $200</span></p>
+            <p><img src="/Pics/easy return.png" width="40px" height="35px"> Easy 30 Day Returns <br><span> Back return
+                    in & days</span></p>
+            <p> <img src="/Pics/money back.png" width="40px" height="35px"> Money back Gurantee <br> <span> Gurantee
+                    within 30 days</span> </p>
+            <p> <img src="/Pics/operator2.png" width="40px" height="35px"> Easy Online Support <br> <span> Any Time
+                    Support</span> </p>
+        </section>
+    </div>
+
+</body>
+
+</html>
