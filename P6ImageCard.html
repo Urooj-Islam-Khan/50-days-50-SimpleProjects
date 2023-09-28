@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Image Hover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7f9ead;
+        }
+
+        .card {
+            position: relative;
+            width: 350px;
+            height: 200px;
+            border-radius: 10px;
+            padding: 20px 40px;
+            border: 3px solid pink;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+            background-color: #fff;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            height: 400px;
+        }
+
+        .imgbox {
+            position: relatie;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-100px);
+            z-index: 99;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .content {
+            padding: 10px 20px;
+            text-align: center;
+            transform: translateY(-180px);
+            opacity: 0;
+
+        }
+
+        .card:hover>.content {
+            opacity: 1;
+        }
+
+        .content h2 {
+            color: rgb(7, 12, 136);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="/Pics/smile-quote-background_23-2147633218.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>Keep Smiling</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi assumenda, culpa fuga veniam
+                doloremque perspiciatis necessitatibus cupiditate facilis dolore alias quis!
+        </div>
+    </div>
+</body>
+
+</html>
