@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-color: rgb(227, 151, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            width: 1200px;
+            height: 600px;
+            background-color: white;
+            border: 3px solid transparent;
+            box-shadow: 3px 3px 5px rgb(61, 60, 60), -3px -3px 5px rgb(61, 60, 60);
+        }
+
+        .leftside {
+            border-right: 4px solid grey;
+            width: 400px;
+            height: 500px;
+            position: relative;
+            top: 50px;
+
+        }
+
+        .leftside img {
+            position: relative;
+            left: 150px;
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: 20px;
+            margin-bottom: 10px;
+        }
+
+        .leftside a {
+            color: purple;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .leftside .add {
+            position: relative;
+            left: 150px;
+        }
+
+        .leftside .call {
+            position: relative;
+            left: 155px;
+        }
+
+        .leftside .mail {
+
+            position: relative;
+            left: 160px;
+        }
+
+        #add {
+            margin: 30px 0;
+        }
+
+        #call {
+            margin: 30px 0;
+        }
+
+        #mail {
+            margin: 30px 0;
+        }
+
+
+
+        p {
+            color: rgb(255, 3, 255);
+        }
+
+        #add .one {
+            position: relative;
+            left: 158px;
+        }
+
+        #add .two {
+            position: relative;
+            left: 148px;
+        }
+
+        #call .one {
+            position: relative;
+            left: 138px;
+        }
+
+        #call .two {
+            position: relative;
+            left: 140px;
+        }
+
+        #mail .one {
+            position: relative;
+            left: 90px;
+        }
+
+        #mail .two {
+            position: relative;
+            left: 100px;
+        }
+
+        .rightside {
+            width: 760px;
+            margin: 50px 40px;
+
+        }
+
+        .rightside h3 {
+            font-size: 30px;
+            text-align: center;
+            color: purple;
+        }
+
+        .rightside p {
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            line-height: 27px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            height: 350px;
+            display: grid;
+            gap: 10px;
+        }
+
+        form input:first-child {
+            height: 50px;
+            color: rgb(255, 42, 149);
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding-left: 20px;
+
+        }
+
+        form input:nth-child(2) {
+            height: 50px;
+            color: rgb(255, 42, 149);
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding-left: 20px;
+
+        }
+
+        form input:last-child {
+            height: 50px;
+            background-color: violet;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding-left: 20px;
+
+        }
+
+
+        form #textarea {
+            color: rgb(255, 42, 149);
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="leftside">
+            <div id="add">
+                <img src="/Pics/icons/address" class="icon1">
+                <a href="#" class="add">Address </a>
+                <p class="one">ABC Area</p>
+                <p class="two">Hyderabad</p>
+            </div>
+            <div id="call">
+                <img class="icon2" src="/Pics/icons/call">
+                <a href="#" class="call">Phone</a>
+                <p class="one">0312-1234567</p>
+                <p class="two">021-9876543</p>
+            </div>
+            <div id="mail"> <img class="icon3" src="/Pics/mail">
+                <a href="#" class="mail">Email</a>
+                <p class="one">thecodingroom@gmail.com</p>
+                <p class="two">uroojislam@outlook.com</p>
+            </div>
+        </div>
+        <div class="rightside">
+            <h3>Send us a message</h3>
+            <p>If ou have any work from me or any type of queries related to my tutorials, you can send me message from
+                here. It's my pleasure to help you</p>
+            <form>
+                <input type="text" id="text" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter your email">
+                <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Enter your message"></textarea>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
