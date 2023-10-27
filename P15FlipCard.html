@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://fontawesome.com/search?s=solid&f=sharp&o=r"></script> -->
+    <title>Flip Card</title>
+    <style>
+        /* @import url(https://fonts.google.com/specimen/Roboto+Condensed); */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html,
+        body {
+            display: grid;
+            height: 100vh;
+            place-items: center;
+        }
+
+        .wraper {
+            height: 400px;
+            width: 320px;
+            position: relative;
+
+        }
+
+        .wraper .card {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .wraper .card img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .wraper .back-face {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="card front-face">
+            <img src="/Pics/purple-stickman-sitting-desk_23-2150245832.jpg" alt="">
+        </div>
+        <div class="card back-face">
+            <img src="/Pics/purple-stickman-sitting-desk_23-2150245832.jpg" alt="">
+            <div class="info">
+                <div class="title">
+                    <h2>Coding Room</h2>
+                    <p>Frontend-Web Developer and <br>Uesr-Interface Designer </p>
+                </div>
+                <ul>
+                    <a href="#"><img src="/Pics/icons/facebook" alt=""></a>
+                    <a href="#"><img src="/Pics/icons/Insta" alt=""></a>
+                    <a href="#"><img src="/Pics/icons/github" alt=""></a>
+                    <a href="#"><img src="/Pics/icons/Youtube" alt=""></a>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
