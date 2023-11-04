@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(147, 145, 145);
+        }
+
+        .inner {
+            padding-top: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 100px;
+            background-color: #2ecc71;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: 1rem;
+            padding: 1rem 88px;
+            font-size: 1.2rem;
+        }
+
+        .skillbox {
+            padding: 1rem;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .skilltitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .img {
+            height: 90px;
+            width: 90px;
+            position: relative;
+            border-radius: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skillicon {
+            width: 50px;
+        }
+    </style>
+    <title>Responsive My skill Section</title>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="header">
+            <h1>My Skills</h1>
+        </div>
+        <div class="container">
+
+
+            <div class="skillbox">
+                <div class="skilltitle">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" class="skillicon">
+
+                    </div>
+                    <h3><i class="fa-brands fa-html5"></i> HTML 5</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus sunt, vitae, minus error,
+                    earum praesentium eos dolorum porro fugiat ea. Ut quod veritatis tempore neque iure obcaecati omnis
+                    ducimus.</p>
+            </div>
+
+            <div class="skillbox">
+                <div class="skilltitle">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" class="skillicon">
+                    </div>
+                    <h3><i class="fa-brands fa-css3-alt"></i>
+                        CSS 3</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus sunt, vitae, minus error,
+                    earum praesentium eos dolorum porro fugiat ea. Ut quod veritatis tempore neque iure obcaecati omnis
+                    ducimus.</p>
+            </div>
+
+            <div class="skillbox">
+                <div class="skilltitle">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" class="skillicon">
+                    </div>
+                    <h3>
+                        <i class="fa-brands fa-js"></i> Javascript
+                    </h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus sunt, vitae, minus error,
+                    earum praesentium eos dolorum porro fugiat ea. Ut quod veritatis tempore neque iure obcaecati omnis
+                    ducimus.</p>
+            </div>
+
+            <div class="skillbox">
+                <div class="skilltitle">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" class="skillicon">
+
+                    </div>
+                    <h3> <i class="fa-brands fa-java"></i> Java</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus sunt, vitae, minus error,
+                    earum praesentium eos dolorum porro fugiat ea. Ut quod veritatis tempore neque iure obcaecati omnis
+                    ducimus.</p>
+            </div>
+
+            <div class="skillbox">
+                <div class="skilltitle">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" class="skillicon">
+
+                    </div>
+                    <h3><i class="fa-brands fa-python"></i>
+                        Python</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus sunt, vitae, minus error,
+                    earum praesentium eos dolorum porro fugiat ea. Ut quod veritatis tempore neque iure obcaecati omnis
+                    ducimus.</p>
+            </div>
+
+            <div class="skillbox">
+                <div class="skilltitle">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968332.png" class="skillicon">
+                    </div>
+                    <h3> <i class="fa-brands fa-php"></i>
+                        Php</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus sunt, vitae, minus error,
+                    earum praesentium eos dolorum porro fugiat ea. Ut quod veritatis tempore neque iure obcaecati omnis
+                    ducimus.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
