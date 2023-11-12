@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizantal Scroller</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        #parent {
+            background-color: grey;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .child {
+            display: inline-block;
+        }
+
+        .child img {
+            height: 800px;
+            width: 800px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child"><img src="/Pics/restaraunt/chicken.jpg"></div>
+        <div class="child"><img src="/Pics/restaraunt/burger.jpg"></div>
+        <div class="child"><img src="/Pics/restaraunt/coffee.webp"></div>
+        <div class="child"><img src="/Pics/restaraunt/chicken.jpg"></div>
+    </div>
+</body>
+
+</html>

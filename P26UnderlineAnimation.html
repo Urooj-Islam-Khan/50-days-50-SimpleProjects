@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underline Animation Text</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Agbalumo;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffb4b4;
+        }
+
+        span {
+            color: grey;
+        }
+
+        h1 {
+
+            display: inline;
+            font-weight: 900;
+            position: relative;
+            font-size: 100px;
+            cursor: pointer;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 5px;
+            width: 0%;
+            background-color: #333;
+            transition: all ease 1s;
+        }
+
+        h1:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>T<span>hE Co</span>DiN<span>g RoO</span>m </h1>
+</body>
+
+</html>
